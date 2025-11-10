@@ -1,4 +1,4 @@
-const soLuongChuSoLonNhat = (n) => {
+const soLuongChuSoNhoNhat = (n) => {
   let count = 0;
   const nums = String(n).split("");
   const min = Math.min(...nums);
@@ -10,4 +10,4 @@ const soLuongChuSoLonNhat = (n) => {
   return count;
 };
 
-console.log(soLuongChuSoLonNhat(7361873681));
+console.log(soLuongChuSoNhoNhat(7361873681));
