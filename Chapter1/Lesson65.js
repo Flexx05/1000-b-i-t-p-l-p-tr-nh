@@ -9,14 +9,15 @@ const phuongTrinhBac2 = (a, b, c) => {
   }
 
   if (delta > 0) {
-    return `x1 = ${(-b + Math.sqrt(delta)) / (2 * a)} x2 = ${
-      (-b - Math.sqrt(delta)) / (2 * a)
-    }`;
+    return {
+      x1: (-b + Math.sqrt(delta)) / (2 * a),
+      x2: (-b - Math.sqrt(delta)) / (2 * a),
+    };
   } else if (delta === 0) {
-    return `x1 = x2 = ${-b / (2 * a)}`;
+    return { x: -b / (2 * a) };
   } else {
     return "Vô nghiệm";
   }
 };
 
-console.log(phuongTrinhBac2(1, 2, 1));
+console.log(phuongTrinhBac2(1, -5, 6));
